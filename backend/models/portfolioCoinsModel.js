@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const Coin = new mongoose.Schema(
+const CoinSchema = new mongoose.Schema(
   {
     // user: {
     //   type: mongoose.Schema.Types.ObjectId,
@@ -25,6 +25,6 @@ const Coin = new mongoose.Schema(
   }
 );
 
-const CoinSchema = mongoose.model("Coin", Coin);
+const PortfolioCoins = mongoose.model("Coin", CoinSchema);
 
-module.exports = CoinSchema;
+module.exports = PortfolioCoins;

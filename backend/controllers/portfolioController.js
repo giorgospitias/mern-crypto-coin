@@ -1,6 +1,6 @@
 const asyncHandler = require("express-async-handler");
 
-const PortfolioCoins = require("../models/PortfolioCoinsModel");
+const PortfolioCoins = require("../models/portfolioCoinsModel");
 // const User = require("../models/userModel");
 
 // @desc    Get PortfolioCoins

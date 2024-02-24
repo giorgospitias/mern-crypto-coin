@@ -5,11 +5,12 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon backend/app.js",
-    "debug":"ndb app.js"
+    "debug": "ndb app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",

@@ -5,9 +5,9 @@ const cors = require("cors");
 const connectDB = require("./mongodb/connect");
 const errorHandler = require("./middleware/errorMiddleware");
 const portfolioRoutes = require("./routes/portfolioRoutes");
+const userRoutes = require("./routes/userRoutes");
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./middleware/errorMiddleware");
-// const userRoutes = require("./routes/userRoutes");
 
 connectDB();
 
@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Routes
 app.use("/api/v1/portfolio", portfolioRoutes);
-// app.use("/api/v1/user", userRoutes);
+app.use("/api/v1/user", userRoutes);
 
 //MIDDLEWARES
 app.get("/", async (req, res) => {
